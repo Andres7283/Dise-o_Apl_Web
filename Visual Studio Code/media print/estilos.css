@@ -1,0 +1,40 @@
+.contenedor {
+  font-size: 3rem;
+}
+@media print {
+  .contenedor p {
+    font-size: 1rem;
+  }
+}
+.contenedor a {
+  font-size: 4rem;
+}
+.contenedor a:link {
+  color: pink;
+}
+.contenedor a:visited {
+  color: green;
+}
+.contenedor a:hover {
+  color: red;
+}
+.contenedor a:focus {
+  color: blue;
+}
+.contenedor a:active {
+  color: orange;
+}
+.seccion {
+  font-size: 4rem;
+  background-color: blue;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.seccion:hover {
+  background-color: purple;
+}
+.seccion:hover {
+  color: yellow;
+}

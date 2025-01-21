@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "nunitoSans";
+  src: url(../TipografiasResponsive/font/Nunito_sans.ttf) format("trueType");
+}
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: "nunitoSans";
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2%;
+}
+
+@media (min-width: 476px) and (max-width: 1024px) {
+  .contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+  .contenedor div:nth-child(2) {
+    order: 3;
+    border: 1px solid;
+    width: 100%;
+    padding: 1%;
+  }
+  .contenedor div:nth-child(1) {
+    width: calc(50% - 4%);
+    order: 3;
+  }
+  .contenedor div:nth-child(3) {
+    width: calc(50% - 4%);
+    order: 1;
+  }
+}
+@media (min-width: 0px) and (max-width: 475px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor div:nth-child(3) {
+    order: 1;
+  }
+  .contenedor div:nth-child(2) {
+    order: 3;
+  }
+  .contenedor div:nth-child(1) {
+    order: 2;
+  }
+}

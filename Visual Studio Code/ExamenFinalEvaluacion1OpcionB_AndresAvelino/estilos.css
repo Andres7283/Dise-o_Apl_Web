@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(font/RobotoFlex-Regular.ttf) format("trueType");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background-color: #f1f2f3;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor {
+  width: 37%;
+}
+.inicio {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.entrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #fff;
+}
+.nuevo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: grey;
+  box-shadow: 0 5px 0 0 f1f2f3;
+}
+.pestañas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.entrar hr {
+  border: solid 2px #1450a0;
+  width: 100%;
+}
+.entrar p {
+  margin-top: calc(4% - 2px);
+  margin-bottom: calc(4% - 2px);
+  font-weight: bold;
+}
+.nuevo p {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: #fff;
+  font-weight: bold;
+}
+.linea {
+  margin: 0 0 5% 0;
+  font-size: small;
+}
+.nueve {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 4% 2% 4%;
+}
+input {
+  border: solid 1px #f1f2f3;
+  border-radius: 12px;
+  padding: 1% 1% 1% 1%;
+  margin-bottom: 5%;
+  outline: 0;
+}
+input[type="button"] {
+  background-color: orange;
+  color: #f1f2f3;
+  padding: 2% 2% 2% 2%;
+  margin: 0;
+}
+b {
+  margin-bottom: 1%;
+  font-size: small;
+}
+.recuerdame {
+  margin-top: 2%;
+}
+input[type="checkbox"] {
+  margin-right: 1%;
+}
+.contraseña {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+.contraseña p {
+  font-size: small;
+}
+.barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.barra hr {
+  width: 90%;
+}
+.b1 {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.b2 {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.dLogo {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.pie p {
+  font-size: small;
+}
+
+.logo {
+  width: 70px;
+}
+.pie {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  width: 100%;
+  background-color: #000;
+  padding: 1% 0 1% 0;
+}
+.pie p {
+  color: #f1f2f3;
+}
+.pie .gris {
+  color: gray;
+}
+@media (max-width: 625px) {
+  .dLogo {
+    justify-content: end;
+  }
+  .pie p {
+    color: gray;
+  }
+  body .pie:nth-child(3) {
+    order: 1;
+  }
+  body .contenedor:nth-child(1) {
+    order: 2;
+  }
+  body .dLogo:nth-child(2) {
+    order: 3;
+  }
+}

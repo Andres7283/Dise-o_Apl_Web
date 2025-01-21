@@ -1,0 +1,25 @@
+.cont {
+  background-color: #226666;
+  width: 400px;
+  height: 400px;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.item {
+  background-color: pink;
+  width: 180px;
+  height: 40px;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:first-child {
+  order: 2;
+  align-self: self-end;
+}
+.item:nth-child(2) {
+  justify-self: right;
+}

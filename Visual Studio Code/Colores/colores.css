@@ -1,0 +1,45 @@
+.contenedor {
+  background-color: rgb(248, 225, 197);
+  display: flex;
+  border: solid black;
+  flex-direction: row;
+  justify-content: center;
+  width: 900px;
+  height: auto;
+  margin: 1% auto;
+}
+.color1 {
+  background-color: #fffcfcdc;
+  width: 300px;
+  height: 300px;
+  border: solid #000000 1px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.color2 {
+  background-color: #524f4f;
+  width: 300px;
+  height: 300px;
+  border: solid black 1px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.color3 {
+  color: white;
+  background-color: #222020;
+  width: 300px;
+  height: 300px;
+  border: solid black 1px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+h1,
+h2 {
+  text-align: center;
+}

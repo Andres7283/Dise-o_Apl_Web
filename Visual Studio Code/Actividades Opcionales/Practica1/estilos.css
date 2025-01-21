@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "amazon";
+  src: url(font/AmazonEmber_Bd.ttf) format("trueType");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "amazon";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+}
+.aws {
+  width: 80px;
+  margin: 2% 0 10% 0;
+}
+h1 {
+  margin: 2% 0 2% 0;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 98, 255);
+}
+.raiz {
+  border: solid rgba(128, 128, 128, 0.4) 1px;
+  padding: 3%;
+  margin: 2% 0 2% 0;
+}
+.raiz b {
+  padding: 0 0 0 1%;
+}
+.raiz p {
+  padding: 1% 0 0 5%;
+}
+.raiz:hover {
+  background-color: hsla(202, 100%, 50%, 0.315);
+  border-color: hsl(202, 100%, 50%);
+}
+.iam {
+  border: solid rgba(128, 128, 128, 0.4) 1px;
+  padding: 3%;
+  margin: 2% 0 2% 0;
+}
+.iam b {
+  padding: 0 0 0 1%;
+}
+.iam p {
+  padding: 1% 0 0 5%;
+}
+.iam:hover {
+  background-color: hsla(202, 100%, 50%, 0.315);
+  border-color: hsla(202, 100%, 50%, 0.751);
+}
+h3 {
+  margin: 2% 0 2% 0;
+}
+input[type="text"] {
+  width: 97%;
+  height: 30px;
+  margin: 2% 0 2% 0;
+  padding-left: 2%;
+}
+input[type="button"] {
+  width: 100%;
+  height: 30px;
+  margin: 2% 0 2% 0;
+  background-color: rgba(0, 89, 255, 0.745);
+  color: white;
+  font-weight: bold;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.email p {
+  margin: 2% 0 2% 0;
+  font-size: smaller;
+}

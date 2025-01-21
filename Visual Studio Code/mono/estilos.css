@@ -1,0 +1,46 @@
+.dc {
+  display: flex;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+}
+.dc::before {
+  content: "";
+  background-image: url(img/monoVe.png);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.dc:focus-within::before {
+  background-image: url(img/monoNoVe.png);
+}
+.dn {
+  width: 18%;
+  padding-right: 1.5%;
+}
+.nombre {
+  width: 100%;
+  padding: 3%;
+  font-size: 100%;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  outline: 0;
+}
+.contraseña {
+  width: 100%;
+  padding: 1%;
+  font-size: 100%;
+  border: 0px;
+  border-radius: 5px;
+  outline: 0;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dn,
+.dc {
+  margin: 0.5%;
+}

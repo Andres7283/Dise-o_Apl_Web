@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 17%;
+  height: 100vh;
+  background-color: rgb(136, 208, 136);
+  padding: 0 7% 0 16%;
+}
+span {
+  color: yellow;
+}
+.titulo h1 {
+  color: white;
+  font-size: 3rem;
+}
+.titulo p {
+  color: white;
+  font-size: 1rem;
+}
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 60%;
+}
+.correo {
+  border: none;
+  border-bottom: solid 1px gray;
+  outline: none;
+  width: 35%;
+  font-size: 1rem;
+  margin-bottom: 0.5%;
+  text-align: center;
+}
+.contraseña {
+  border: none;
+  border-bottom: solid 1px gray;
+  outline: none;
+  width: 35%;
+  font-size: 1rem;
+  margin-bottom: 0.5%;
+  text-align: left;
+}
+.registro p {
+  color: gray;
+  font-size: 0.98rem;
+  margin-bottom: 4%;
+}
+.registro u {
+  color: rgb(93, 93, 93);
+}

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list li {
+  margin: 0 15px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-list a:hover {
+  color: #007bff;
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+}
+
+.content-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.content-text {
+  flex: 1;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+section.participa {
+  text-align: center;
+  margin: 2rem;
+}
+section.participa button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Azul */
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+section.otros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 10%;
+}
+section.otros .texto,
+section.otros .imagen {
+  width: 46%;
+  margin: 2%;
+}
+section.otros .imagen img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .content-block {
+    flex-direction: column;
+    width: calc(100% / 3);
+  }
+  .content-img {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-content {
+    gap: 20px;
+  }
+  section.otros .texto,
+  section.otros .imagen {
+    width: 96%;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  section.otros {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .imagen {
+    order: -1;
+  }
+}
+@media (max-width: 562px) {
+  .header {
+    flex-direction: column;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .content-block {
+    width: 100%;
+    padding: 20px;
+  }
+  .content-img {
+    height: auto;
+  }
+  section.participa {
+    margin: 0 0 40px 0;
+  }
+  section.otros .imagen {
+    margin: 0;
+  }
+  section.otros {
+    padding: 0 20px;
+  }
+  section.otros .texto,
+  section.otros .imagen {
+    width: 100%;
+    margin: 0;
+  }
+  footer p {
+    margin: 0;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}

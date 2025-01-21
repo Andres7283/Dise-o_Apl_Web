@@ -1,0 +1,47 @@
+p{color: white;}
+*{
+    font-family:sans-serif
+}
+h1{
+    text-align: center
+}
+.div1{
+    background-color: green;
+    float: left;
+    margin-right: 2%;
+    height: 200px;
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div2{
+    background-color: blue;
+    float: right;
+    height: 200px;
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.pie{
+    color: black;
+    TEXT-ALIGN: center;
+    margin-top: 2%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 2%;
+}
+li{
+    margin: 0 2%;
+}

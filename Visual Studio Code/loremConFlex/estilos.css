@@ -1,0 +1,57 @@
+.main {
+  width: 1440px;
+  height: 880px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border: groove 15px;
+  position: relative;
+}
+.cabezera {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: end;
+  max-height: 10%;
+}
+.titulo {
+  width: 70%;
+  margin-left: 5%;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 260%;
+}
+.redes {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 2%;
+}
+.redes img:nth-child(4) {
+  margin-left: 8%;
+}
+.main > div:nth-child(2) {
+  display: flex;
+  margin-top: 3%;
+}
+.informacion {
+  display: flex;
+  justify-content: center;
+  margin: 0% 10% 0% 10%;
+}
+.informacion > div {
+  width: 30%;
+  margin: 1%;
+}
+h2 {
+  color: rgb(91, 124, 214);
+}
+h3 {
+  font-weight: unset;
+}
+.pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: sticky;
+}

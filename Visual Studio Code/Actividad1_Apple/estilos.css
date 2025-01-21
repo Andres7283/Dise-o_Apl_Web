@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "fuenteApple";
+  src: url(../Actividad1_Apple/font/sf-pro-display_regular.woff2)
+      format("woff2"),
+    url(../Actividad1_Apple/font/sf-pro-text_regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "fueteRoboto";
+  src: url(../Actividad1_Apple/font/Roboto-Regular.woff2) format("woff2"),
+    url(../Actividad1_Apple/font/Roboto-Regular.ttf) format("truetype");
+}
+.fuenteApple {
+  font-family: "fuenteApple";
+}
+.roboto {
+  font-family: "fueteRoboto";
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "nunitoSanz";
+  src: url(fonts/nunito.ttf) format("trueType");
+}
+body {
+  font-family: "nunitoSanz";
+}
+.cabecera {
+  display: flex;
+  justify-content: end;
+  background-color: whitesmoke;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.cabecera p {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  padding: 4% 4% 4% 0;
+}
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cuerpo h1 {
+  margin-bottom: 1%;
+}
+.informacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  width: 80%;
+}
+.informacion img {
+  width: 70%;
+}
+.contenido {
+  width: 30%;
+  margin: 0 5%;
+}
+.contenido input {
+  background-color: blue;
+  color: white;
+  width: 10%;
+  height: 7%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5%;
+}

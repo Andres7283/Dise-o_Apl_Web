@@ -1,0 +1,14 @@
+.contenedorGrid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.item1 {
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
