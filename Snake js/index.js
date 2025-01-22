@@ -131,4 +131,6 @@ $(document).ready(function () {
     createFood();
     gameInterval = setInterval(moveSnake, speed);
   }
+
+  startGame();
 });
