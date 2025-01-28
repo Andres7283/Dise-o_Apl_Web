@@ -1,32 +1,23 @@
 $(document).ready(function () {
   const gameContainer = $("#gameContainer");
-  const scoreDisplay = $("score");
-  const gameOverDisplay = $("#gama-over");
+  const scoreDisplay = $(".score");
+  const gameOverDisplay = $(".game-over");
+  const reiniciar = $("#reload");
   const containerSize = 400;
   const snakeSize = 20;
-  let snake = [
-    {
-      x: 0,
-      y: 0,
-    },
-  ];
-  let food = [
-    {
-      x: 0,
-      y: 0,
-    },
-  ];
+  let snake = [{ x: 0, y: 0 }];
+  let food = { x: 0, y: 0 };
   let direction = "RIGHT";
   let score = 0;
   let speed = 200;
   let gameInterval;
   let isPaused = false;
 
-  function crateSnake() {
+  function createSnake() {
     gameContainer.find(".snake").remove();
     snake.forEach((segment) => {
       gameContainer.append(
-        `<div class = "snake" style= "left: ${segment.x}px; top:${segment.y}px;"`
+        `<div class="snake" style="left: ${segment.x}px; top:${segment.y}px;"></div>`
       );
     });
   }
@@ -46,7 +37,7 @@ $(document).ready(function () {
       });
     } while (isFoodOnSnake);
     gameContainer.append(
-      `<div class = "food" style= "left: ${food.x}px; top:${food.y}px;"`
+      `<div class="food" style="left: ${food.x}px; top:${food.y}px;"></div>`
     );
   }
 
@@ -54,14 +45,18 @@ $(document).ready(function () {
     let newHead = { ...snake[0] };
 
     switch (direction) {
-      case "RIGTH":
+      case "RIGHT":
         newHead.x += snakeSize;
+        break;
       case "LEFT":
         newHead.x -= snakeSize;
+        break;
       case "UP":
         newHead.y -= snakeSize;
+        break;
       case "DOWN":
         newHead.y += snakeSize;
+        break;
     }
 
     if (
@@ -75,7 +70,8 @@ $(document).ready(function () {
       gameOverDisplay.show();
       return;
     }
-    if (newHead.x === food && newHead.y === food.y) {
+
+    if (newHead.x === food.x && newHead.y === food.y) {
       score += 10;
       scoreDisplay.text(`Score: ${score}`);
       gameContainer.find(".food").remove();
@@ -84,16 +80,17 @@ $(document).ready(function () {
         speed *= 0.9;
         clearInterval(gameInterval);
         gameInterval = setInterval(moveSnake, speed);
-      } else {
-        snake.pop();
       }
-      snake.unshift(newHead);
-      createSnake();
+    } else {
+      snake.pop();
     }
+
+    snake.unshift(newHead);
+    createSnake();
   }
 
   function isCollision(newHead) {
-    for (let i = 0; i < snake.length; index++) {
+    for (let i = 0; i < snake.length; i++) {
       if (newHead.x === snake[i].x && newHead.y === snake[i].y) {
         return true;
       }
@@ -103,19 +100,19 @@ $(document).ready(function () {
 
   $(document).keydown(function (e) {
     switch (e.which) {
-      case 37:
+      case 37: // Left
         if (direction !== "RIGHT") direction = "LEFT";
         break;
-      case 38:
+      case 38: // Up
         if (direction !== "DOWN") direction = "UP";
         break;
-      case 39:
+      case 39: // Right
         if (direction !== "LEFT") direction = "RIGHT";
         break;
-      case 40:
+      case 40: // Down
         if (direction !== "UP") direction = "DOWN";
         break;
-      case 32:
+      case 32: // Space (Pause)
         isPaused = !isPaused;
         if (isPaused) {
           clearInterval(gameInterval);
@@ -124,6 +121,10 @@ $(document).ready(function () {
         }
         break;
     }
+  });
+
+  reiniciar.click(function () {
+    startGame();
   });
 
   function startGame() {
