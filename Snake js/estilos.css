@@ -17,7 +17,7 @@ body {
 }
 
 .snake,
-.food {
+.manzana {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -25,11 +25,11 @@ body {
   border: 1px solid black;
 }
 
-.food {
+.manzana {
   background-color: red;
 }
 
-.score {
+.puntos {
   color: white;
   position: absolute;
   top: -50px;

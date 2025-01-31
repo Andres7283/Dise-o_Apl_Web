@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Interactivo</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="signup-form">
+        <h2>Crear Cuenta</h2>
+
+        <label for="username">Usuario</label>
+        <input type="text" id="username" class="input-field" required />
+        <small class="error-message">No se puede dejar en blanco</small>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" class="input-field" required />
+        <small class="error-message">No se puede dejar en blanco</small>
+
+        <label for="password">Contraseña</label>
+        <div class="password-container">
+          <input type="password" id="password" class="input-field" required />
+          <span class="toggle-password">👁️</span>
+        </div>
+        <small class="error-message">No se puede dejar en blanco</small>
+
+        <label>
+          <input type="checkbox" id="terms" /> Acepto los términos y condiciones
+        </label>
+
+        <button type="submit" id="submit-btn" disabled>Crear</button>
+      </form>
+      <p id="success-message" class="hidden">Gracias por crear tu cuenta</p>
+    </div>
+  </body>
+</html>

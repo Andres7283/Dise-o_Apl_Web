@@ -1,0 +1,63 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border-color: #1b74e4;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button {
+  background: #1b74e4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background: #b1b1b1;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
