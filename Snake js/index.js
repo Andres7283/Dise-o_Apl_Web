@@ -99,19 +99,19 @@ $(document).ready(function () {
 
   $(document).keydown(function (e) {
     switch (e.which) {
-      case 37: // Left
+      case 37: // Ixquierada
         if (direccion !== "RIGHT") direccion = "LEFT";
         break;
-      case 38: // Up
+      case 38: // Arriba
         if (direccion !== "DOWN") direccion = "UP";
         break;
-      case 39: // Right
+      case 39: // Derecha
         if (direccion !== "LEFT") direccion = "RIGHT";
         break;
-      case 40: // Down
+      case 40: // abajo
         if (direccion !== "UP") direccion = "DOWN";
         break;
-      case 32: // Space (Pause)
+      case 32: // tecla espacio (Pausa)
         pausa = !pausa;
         if (pausa) {
           clearInterval(intervalo);
